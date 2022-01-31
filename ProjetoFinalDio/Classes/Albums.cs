@@ -4,14 +4,14 @@ namespace DIO.BlackMetal
 {
     public class Albums : EntidadeBase
     {
-        // Atributos
+        // Características dos discos
 		private Genero Genero { get; set; }
         private string Banda { get; set; }
 		private string Titulo { get; set; }
 		private int Ano { get; set; }
         private bool Excluido {get; set;}
 
-        // Métodos
+       
 		public Albums(int id, Genero genero, string banda, string titulo, int ano)
 		{
 			this.Id = id;
@@ -24,8 +24,7 @@ namespace DIO.BlackMetal
 
         public override string ToString()
 		{
-			// Environment.NewLine https://docs.microsoft.com/en-us/dotnet/api/system.environment.newline?view=netcore-3.1
-            string retorno = "";
+			string retorno = "";
             retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Banda: " + this.Banda + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
